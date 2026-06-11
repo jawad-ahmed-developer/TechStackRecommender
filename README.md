@@ -33,6 +33,7 @@ tech-stack-recommender/
 │
 ├── raw_skills.csv               # Dataset
 ├── tech_stack_recommender.ipynb # Main notebook
+├── tech_stack_recommender.py # Main .py file
 └── README.md
 ```
 
@@ -50,43 +51,11 @@ No external machine learning libraries are required.
 
 ---
 
-## ▶️ Usage
-
-```python
-# Define your skills
-inputs = ['AWS', 'Docker', 'Kubernetes']
-
-# Run the notebook to generate recommendations
-```
-
-### Sample Output
-
-```text
-============================================================
-Following are the recommended Roles based on the user input
-============================================================
-
-User Inputs: ['AWS', 'Docker', 'Kubernetes']
-
-Recommended Roles:
-
-#1 DevOps Engineer
-Score  : 0.6823
-
-#2 Cloud Engineer
-Score  : 0.5341
-
-#3 Site Reliability Engineer
-Score  : 0.4102
-```
-
----
-
 ## 📸 Screenshots
 
-| Notebook Overview | Sample Output    |
-| ----------------- | ---------------- |
-| screenshot_1.png  | screenshot_2.png |
+<img width="728" height="444" alt="image" src="https://github.com/user-attachments/assets/ca79cdbf-8350-4e91-b7ef-d142f0b00e0d" />
+
+<img width="773" height="455" alt="image" src="https://github.com/user-attachments/assets/764fe26b-8ebf-4353-ab5e-3a4310799c2f" />
 
 ---
 
@@ -104,4 +73,4 @@ Score  : 0.4102
 **Jawad Ahmed**
 BS Computer Science
 
-Built as part of a Data Science / Machine Learning coursework project.
+Built as part of Machine Learning Intern at Decodelab

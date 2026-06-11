@@ -1,4 +1,4 @@
-Tech Stack Recommender
+<img width="768" height="458" alt="image" src="https://github.com/user-attachments/assets/1a8a056f-96ae-4af2-b631-918be776a056" />Tech Stack Recommender
 
 A content-based recommendation engine that maps a user's skills to the most relevant tech career paths using TF-IDF vectorization and Cosine Similarity.
 
@@ -33,13 +33,17 @@ No external ML libraries required.
 
 ▶️ Usage & 📸 Screenshots
 # Run the notebook — output prints Top 3 recommended roles
-input1 = ['AWS', 'Docker', 'Kubernetes']
+# input1 = ['AWS', 'Docker', 'Kubernetes']
 <img width="710" height="458" alt="image" src="https://github.com/user-attachments/assets/3ce70f17-77ab-4954-b8c3-f5a6c4b10a6f" />
 
-input2 = ['TensorFlow', 'PyTorch', 'Deep Learning']
+
+# input2 = ['TensorFlow', 'PyTorch', 'Deep Learning']
+
 <img width="865" height="459" alt="image" src="https://github.com/user-attachments/assets/e5c06b2b-a5e1-41f1-9b77-a970b862263a" />
 
-input3 = ['Java', 'Spring Boot', 'Microservices']
+
+# input3 = ['Java', 'Spring Boot', 'Microservices']
+
 <img width="768" height="458" alt="image" src="https://github.com/user-attachments/assets/b51f7d65-4f16-47d9-8026-3b5cef491836" />
 
 🧠 Concepts Applied
@@ -52,4 +56,5 @@ Content-Based Filtering
 
 👤 Author
 Jawad Ahmed — BS Computer Science
+
 Built as part of ML Internship at Decodelab 

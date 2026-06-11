@@ -1,60 +1,107 @@
-<img width="768" height="458" alt="image" src="https://github.com/user-attachments/assets/1a8a056f-96ae-4af2-b631-918be776a056" />Tech Stack Recommender
+# Tech Stack Recommender
 
-A content-based recommendation engine that maps a user's skills to the most relevant tech career paths using TF-IDF vectorization and Cosine Similarity.
+A content-based recommendation engine that maps a user's skills to the most relevant tech career paths using **TF-IDF Vectorization** and **Cosine Similarity**.
 
+---
 
-🚀 Overview
-Tech Stack Recommender takes a list of user skills as input and returns the Top 3 most relevant job roles from a curated dataset. It transforms qualitative career guidance into objective, ranked mathematical output — no black box, no pretrained model.
+## 🚀 Overview
 
-⚙️ How It Works
+Tech Stack Recommender takes a list of user skills as input and returns the **Top 3 most relevant job roles** from a curated dataset.
+
+Instead of relying on pretrained models or black-box algorithms, the system uses mathematical similarity measures to provide transparent and explainable recommendations.
+
+---
+
+## ⚙️ How It Works
+
+```text
 User Skills → TF-IDF Vectors → Cosine Similarity → Top 3 Roles
+```
 
-Dataset — raw_skills.csv stores 20 job roles, each with an associated skill set
-IDF — Computed across all roles to weight rare skills higher
-Vectorization — Every role and the user input are mapped into the same n_skills dimensional vector space using TF-IDF
-Scoring — Cosine similarity is calculated between the input vector and every role vector
-Output — Top 3 roles ranked by similarity score
+* **Dataset** — `raw_skills.csv` contains 20 technology roles and their associated skills.
+* **IDF Calculation** — Rare skills receive higher importance than commonly occurring skills.
+* **Vectorization** — User skills and job roles are represented in the same skill-vector space using TF-IDF.
+* **Similarity Scoring** — Cosine Similarity is computed between the user vector and each role vector.
+* **Ranking** — The Top 3 most relevant roles are returned.
 
+---
 
-🗂️ Project Structure
+## 🗂️ Project Structure
+
+```text
 tech-stack-recommender/
 │
-├── raw_skills.csv               # Dataset — 20 roles with skills
+├── raw_skills.csv               # Dataset
 ├── tech_stack_recommender.ipynb # Main notebook
-├── tech_stack_recommender.py # Main notebook
 └── README.md
+```
 
-📦 Dependencies
-python
+---
+
+## 📦 Dependencies
+
+```python
 pandas
 numpy
-math   # standard library
-No external ML libraries required.
+math
+```
 
-▶️ Usage & 📸 Screenshots
-# Run the notebook — output prints Top 3 recommended roles
-# input1 = ['AWS', 'Docker', 'Kubernetes']
-<img width="710" height="458" alt="image" src="https://github.com/user-attachments/assets/3ce70f17-77ab-4954-b8c3-f5a6c4b10a6f" />
+No external machine learning libraries are required.
 
+---
 
-# input2 = ['TensorFlow', 'PyTorch', 'Deep Learning']
+## ▶️ Usage
 
-<img width="865" height="459" alt="image" src="https://github.com/user-attachments/assets/e5c06b2b-a5e1-41f1-9b77-a970b862263a" />
+```python
+# Define your skills
+inputs = ['AWS', 'Docker', 'Kubernetes']
 
+# Run the notebook to generate recommendations
+```
 
-# input3 = ['Java', 'Spring Boot', 'Microservices']
+### Sample Output
 
-<img width="768" height="458" alt="image" src="https://github.com/user-attachments/assets/b51f7d65-4f16-47d9-8026-3b5cef491836" />
+```text
+============================================================
+Following are the recommended Roles based on the user input
+============================================================
 
-🧠 Concepts Applied
+User Inputs: ['AWS', 'Docker', 'Kubernetes']
 
-Term Frequency — Inverse Document Frequency (TF-IDF)
-Cosine Similarity
-Vector Space Model
-Content-Based Filtering
+Recommended Roles:
 
+#1 DevOps Engineer
+Score  : 0.6823
 
-👤 Author
-Jawad Ahmed — BS Computer Science
+#2 Cloud Engineer
+Score  : 0.5341
 
-Built as part of ML Internship at Decodelab 
+#3 Site Reliability Engineer
+Score  : 0.4102
+```
+
+---
+
+## 📸 Screenshots
+
+| Notebook Overview | Sample Output    |
+| ----------------- | ---------------- |
+| screenshot_1.png  | screenshot_2.png |
+
+---
+
+## 🧠 Concepts Applied
+
+* TF-IDF (Term Frequency – Inverse Document Frequency)
+* Cosine Similarity
+* Vector Space Model
+* Content-Based Filtering
+
+---
+
+## 👤 Author
+
+**Jawad Ahmed**
+BS Computer Science
+
+Built as part of a Data Science / Machine Learning coursework project.
